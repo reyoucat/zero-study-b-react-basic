@@ -3,8 +3,38 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20px;
+  position: relative;
+  top: 4px;
   pointer-events: none;
+}
+
+ol {
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+  float: left;
+}
+
+li>button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  overflow: hidden;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+li button:hover {
+  border-bottom: solid 2px skyblue;
+}
+
+.selected {
+  border-bottom: 2px solid rgb(255, 183, 0);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,6 +43,8 @@
   }
 }
 
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -20,7 +52,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
